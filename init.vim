@@ -28,7 +28,10 @@ Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " this is for
 
 let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']  " CoC extensions needed
 
-Plug 'jiangmiao/auto-pairs' "this will auto close ( [ {
+Plug 'jiangmiao/auto-pairs' 
+Plug 'alvan/vim-closetag'
+
+let g:closetag_filenames = '*.html, *.jsx, *.tsx'
 
 " these plugins will add highlighting and indenting to JSX and TSX files.
 Plug 'yuezk/vim-js'
